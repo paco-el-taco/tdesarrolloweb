@@ -1,0 +1,81 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    color: white;
+    background-color: #1F1C18;
+    font-family: Arial, sans-serif; /* Define la fuente predeterminada */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: #8E0E00;/* Color de fondo del menú */
+    padding: 10px; /* Espaciado interno */
+}
+nav ul {
+    list-style: none; /* Elimina los estilos de lista */
+    display: flex; /* Organiza los elementos en línea */
+    justify-content: center; /* Centra los elementos */
+}
+nav ul li {
+    margin: 0 45px; /* Espaciado entre elementos del menú,se alejan entre mas pixeles pongamos */
+}
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Hace el texto más grueso */
+}
+nav ul li a:hover {
+    color: #ff6969; /* Color del enlace al pasar el mouse */
+    transition: color 1s; /*trasnsicion de 1 segundo para el color*/
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen alrededor de cada sección */
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+    margin-top: 20px; /* Espaciado superior */
+}
+th, td {
+    border: 1px solid #8E0E00; /* Define el borde de las celdas */
+    padding: 10px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+th {
+    background-color: #8E0E00 /* Color de fondo de los encabezados */
+}
+
+/* Estilos de las imágenes */
+img {
+    border-radius: 10px;
+    width: 120px; /* Establece un tamaño fijo para las imágenes */
+    height: 100px;
+    transition: transform 0.3s; /* Agrega una transición suave */
+}
+img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+a
+{
+    text-decoration: none; /*se le quita la linea inferior al link*/
+    color: red; /*se cambia el color de texto de azul a rojo*/
+}
+a:hover
+{
+    color:orange; /*cuando el usuario pase su mouse el color cambiara de rojo a naranja*/
+    transition: color 0.5s; /*Hara una ligera transicion cuando cambie de color*/
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del menú a vertical */
+        text-align: center; /* Centra los elementos del menú */
+    }
+}
